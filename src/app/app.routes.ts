@@ -1,7 +1,9 @@
-import { Routes } from '@angular/router';;
+import { Routes } from '@angular/router';
 import { HomePage } from '../pages/home/home.component';
 import { AboutPage } from '../pages/about/about.component';
 import { AdminPage } from '../pages/admin/admin.component';
+import { authGuard } from './auth.guard';
+
 export const routes: Routes = [
   {
     path: '',
@@ -12,11 +14,8 @@ export const routes: Routes = [
     component: AboutPage
   },
   {
-    path: 'admin',
-    component: AdminPage
+    path: 'admin/:id',
+    component: AdminPage,
+    canActivate: [authGuard]
   }
-
-
-
-
 ];
