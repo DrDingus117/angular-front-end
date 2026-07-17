@@ -4,7 +4,7 @@ import { TableComponent } from '../../components/table/table.component';
 import { FormFieldComponent } from '../../components/form-field/form-field.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-home',   // <-- Change this
   standalone: true,
   imports: [
     CardComponent,

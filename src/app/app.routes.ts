@@ -22,9 +22,5 @@ export const routes: Routes = [
     path: 'admin/:id',
     component: AdminPage,
     canActivate: [authGuard]
-  },
-  {
-    path: 'login',
-    component: InputFormComponent
   }
 ];
