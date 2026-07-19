@@ -28,6 +28,7 @@
             "styles": [
               "src/styles.css"
             ],
+            "baseHref": "/angular-front-end/",
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
